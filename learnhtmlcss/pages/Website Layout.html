@@ -1,0 +1,73 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #73dce3;
+    flex: 1;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 20vh;
+    background: rgb(248, 92, 147);
+  }
+  .inner-row aside {
+    background: rgb(100, 200, 240);
+    flex: 1;
+  }
+  header, footer {
+    background: rgb(36, 236, 86);
+    height: 15vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-size: 35px;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="outer-col-1">LeftSideBar</nav>
+  <div class="outer-col-2">
+  	<header>HEADER - Sample Flexbox Example</header>
+    <div class="inner-row">
+      <div class="inner-col">
+        <article>
+            <h2>First Article</h2>
+            <p>Modern world is the period of history that starts approximately about six hundred years ago, at its beginning there were significant changes in everything, especially people's thinking. Currently, modern world becomes the most important phenomenon in our lives.</p>
+        </article>
+        <article>
+            <h2>Second Article</h2>
+            <p>All our lives we have been taught that change is good, but perhaps we should begin questioning our knowledgeable teachers. All non-western countries are changing today. They too are leaving behind traditional society and making the adjustment to Modern Society. Modern society is very different from traditional society.</p>
+        </article>
+        <article>
+            <h2>Third Article</h2>
+            <p>Technology is changing society as much as it's changing the world around us. People are surrounding themselves with all this technology and paying no mind to the world they are living in. Technology is always improving and it's only getting faster. There are positive and negative things that come with technology. The positive things that can be accomplished are that you can communicate with friends and find any type of information on the internet. The negative aspect of technology is that it affects our social well-being.</p>
+        </article>
+
+  		<footer>Footer</footer>
+      </div>
+    	<aside>RightsideBar</aside>
+    </div>
+  </div>
+</body>
