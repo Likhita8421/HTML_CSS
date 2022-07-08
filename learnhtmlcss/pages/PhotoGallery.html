@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Photo Gallery</title>
+    <style>
+
+        h1{
+            display: flex;
+            flex-flow: column wrap;
+            font-weight: bold;
+            align-content: center;
+            padding: 10px;
+            background-color: rgb(168, 233, 241);
+        }
+        h1 {
+            margin: 0;
+            padding: 20px 0;
+            color: rgb(1, 1, 11);
+            text-shadow: 3px 3px 1px rgb(157, 205, 221);
+        }
+        
+
+
+        .photo-gallery {
+            display: flex;
+            font-weight: bold;
+            flex-wrap: wrap;
+            flex-direction: row;
+            max-height: 100vh;
+            background-color: rgb(245, 249, 250);
+
+
+        } 
+        
+        .photo-gallery img {
+            margin: 10px;
+            border: 3px solid #000;
+            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+            max-width: 23vw;
+        }
+        
+
+        </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>MY PHOTO GALLERY</h1>
+    <div class="top-content">
+        <h3>All Photos</h3>
+        
+    </div>
+
+    <div class="photo-gallery">
+        <img src="..\assets\image.jpg" alt="Sample photo" width="50%">
+        <img src="..\assets\city.jpg" alt="Sample photo" width="50%">
+        <img src="..\assets\image1.jpg" alt="Sample photo" width="50%">
+        <img src="..\assets\Modern City.jpg" alt="Sample photo" width="50%">
+        <img src="..\assets\nature.jpg" alt="Sample photo" width="50%">
+        <img src="..\assets\palace.jpg" alt="Sample photo" width="50%">
+        <img src="..\assets\img.jpg" alt="Sample photo" width="25%" height="25%">
+        <img src="..\assets\imgs.jpg" alt="Sample photo" width="25%" height="25%">
+        <img src="..\assets\imgss.jpg" alt="Sample photo" width="25%" height="25%">
+
+
+    </div>
+</div>     
+
+</body>
+
+</html>
